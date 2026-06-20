@@ -1,0 +1,80 @@
+body {
+background-image: url(1.png);
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+font-size: larger;
+direction: rtl;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode {
+background-color: #121212;
+color: #ffffff;
+}
+
+header {
+text-align: center;
+color: white;
+outline: 20px ridge grey;
+}
+
+.box {
+opacity: 0;
+transform: translateY(50px);
+transition: opacity 0.6s, transform 0.6s;
+background-color: rgb(146, 146, 146);
+border: 20px solid rgb(69, 96, 106);
+border-radius: 10px;
+text-align: center;
+margin: 10px;
+padding: 20px;
+} 
+.box.show {
+opacity: 1;
+transform: translateY(0);
+}
+
+.img {
+height: 400px;
+width: 500px;
+}
+
+.whatsapp-link {
+display: flex;
+align-items: center;
+text-decoration: none;
+color: #25D366;
+font-size: 18px;
+font-weight: bold;
+padding: 10px;
+border-radius: 5px;
+}
+
+.whatsapp-link:hover {
+background-color: #e0f7e9;
+}
+
+.icon {
+width: 150px;
+height: 150px;
+margin: auto;
+padding: 10px;
+}
+
+#backToTop {
+display: none;
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: #25D366;
+color: white;
+border: none;
+border-radius: 50%;
+padding: 10px;
+cursor: pointer;
+}
+
+#backToTop:hover {
+background-color: #128C7E;
+}
